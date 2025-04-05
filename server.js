@@ -23,7 +23,10 @@ const consultationSchema = new mongoose.Schema({
   contact: String,
   place: String,
   duration: String,
+}, {
+  timestamps: true
 });
+
 
 const Consultation = mongoose.model("Consultation", consultationSchema);
 
