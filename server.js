@@ -20,6 +20,7 @@ mongoose.connect(process.env.MONGO_URI, {
 // Schema & Model
 const consultationSchema = new mongoose.Schema({
   name: String,
+  email:String,
   contact: String,
   place: String,
   duration: String,
